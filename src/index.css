@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+html,
+body {
+  background-color: #0A0F0B;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Marquee scroll animation.
+   translateX moves the element horizontally.
+   We move it -50% because the content is doubled —
+   moving exactly half makes the loop seamless. */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause the marquee when the user hovers over it */
+.marquee-wrap:hover .marquee-inner {
+  animation-play-state: paused;
+}
+
+/* Dark mode — html gets the "dark" class via ThemeContext */
+html.dark body {
+  background-color: #0A0F0B;
+}
+
+html:not(.dark) body {
+  background-color: #F5F0E8;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0F0B;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2A3E2C;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4A8C5C;
+}
