@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm install --legacy-peer-deps && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -28,8 +28,5 @@
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.2",
     "vite": "^8.0.1"
-  },
-  "scripts": {
-    "build": "npm install --legacy-peer-deps && vite build"
   }
 }
