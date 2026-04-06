@@ -40,7 +40,7 @@ const MarqueeStrip = () => {
                     {doubled.map((item, index) => (
                         <div
                             key={index}
-                            className="flex-shrink-0 flex items-center gap-3 px-5 py-3 rounded-full"
+                            className="shrink-0 flex items-center gap-3 px-5 py-3 rounded-full"
                             style={{
                                 backgroundColor: item.color + "18",
                                 border: `1px solid ${item.color}50`,
@@ -49,7 +49,7 @@ const MarqueeStrip = () => {
                         >
                             {/* coloured dot */}
                             <div
-                                className="w-2.5 h-2.5 rounded-full flex-shrink-0"
+                                className="w-2.5 h-2.5 rounded-full shrink-0"
                                 style={{ backgroundColor: item.color }}
                             />
 
