@@ -11,7 +11,6 @@ import { Link, useLocation } from "react-router-dom"
         Doreen<span className="text-[#C07840]">.</span>
     </span>
 </Link>
-
 const navLinks = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
