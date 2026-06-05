@@ -1,16 +1,6 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
-<Link to="/" className="flex items-center gap-3">
-    <div className="w-9 h-9 rounded-lg overflow-hidden border-2 border-[#4A8C5C] bg-[#4A8C5C] flex items-center justify-center text-sm font-black text-[#F5F0E8]">
-        DP
-    </div>
-    <span
-        className="text-base font-bold tracking-tight"
-        style={{ color: theme === "dark" ? "#F5F0E8" : "#1A2A1C" }}
-    >
-        Doreen<span className="text-[#C07840]">.</span>
-    </span>
-</Link>
+
 const navLinks = [
     { label: "Home", path: "/" },
     { label: "About", path: "/about" },
